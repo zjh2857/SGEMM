@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/SGEMM/helper.cuh
+stdio.h
+-
+time.h
+-
+windows.h
+-
+sys/time.h
+-
+
+/root/SGEMM/main.cu
+cstdio
+-
+cublas_v2.h
+-
+helper.cuh
+/root/SGEMM/helper.cuh
+
